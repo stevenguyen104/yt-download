@@ -16,7 +16,7 @@ def downloadAudio(link, path):
 # take only audio
     yd = yt.streams.filter(only_audio=True).first()
 #download
-#if empty, def
+#if empty, default download else specified
     if not path != "":
         destination = path.get()
     else:
